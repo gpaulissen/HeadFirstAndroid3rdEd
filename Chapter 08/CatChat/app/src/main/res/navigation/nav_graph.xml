@@ -21,4 +21,9 @@
         android:name="com.hfad.catchat.SentItemsFragment"
         android:label="Sent Items"
         tools:layout="@layout/fragment_sent_items" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.hfad.catchat.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
