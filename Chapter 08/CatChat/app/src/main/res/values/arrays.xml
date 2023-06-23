@@ -1,12 +1,48 @@
 <resources>
-    <!-- Reply Preference -->
-    <string-array name="reply_entries">
-        <item>Reply</item>
-        <item>Reply to all</item>
-    </string-array>
+  <!-- Reply Preference -->
+  <string-array name="reply_entries">
+    <item>Reply</item>
+    <item>Reply to all</item>
+  </string-array>
 
-    <string-array name="reply_values">
-        <item>reply</item>
-        <item>reply_all</item>
-    </string-array>
+  <string-array name="reply_values">
+    <item>reply</item>
+    <item>reply_all</item>
+  </string-array>
+
+  <string-array name="device_type_entries">
+    <item>Pick by Voice</item>
+    <item>Handheld Terminal</item>
+    <item>Reach Fork (Lift 9.3m)</item>
+  </string-array>
+  <string-array name="device_type_entry_values">
+    <item>PBV</item>
+    <item>RFH</item>
+    <item>RFT</item>
+  </string-array>
+
+  <string-array name="certificate_validity_period_entries">
+    <item>1 day</item>
+    <item>30 days</item>
+    <item>180 days</item>
+    <item>360 days</item>
+    <item>365 days</item>
+  </string-array>
+  <string-array name="certificate_validity_period_values">
+    <item>1</item>
+    <item>30</item>
+    <item>180</item>
+    <item>360</item>
+    <item>365</item>
+  </string-array>
+
+  <string-array name="rsa_key_size_entries">
+    <item>2048</item>
+    <item>4096</item>
+  </string-array>
+  <string-array name="rsa_key_size_values">
+    <item>2048</item>
+    <item>4096</item>
+  </string-array>
+
 </resources>

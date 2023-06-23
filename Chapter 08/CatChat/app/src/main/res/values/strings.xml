@@ -1,19 +1,58 @@
 <resources>
-    <string name="app_name">CatChat</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
+  
+  <string name="app_name">CatChat</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <!-- Preference Titles -->
+  <string name="messages_header">Messages</string>
+  <string name="sync_header">Sync</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
+  <!-- Messages Preferences -->
+  <string name="signature_title">Your signature</string>
+  <string name="reply_title">Default reply action</string>
 
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+  <!-- Sync Preferences -->
+  <string name="sync_title">Sync email periodically</string>
+  <string name="attachment_title">Download incoming attachments</string>
+  <string name="attachment_summary_on">Automatically download attachments for incoming emails
+  </string>
+  <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+  <!-- Organization Settings -->
+  <string name="organization_settings">Organization Settings</string>
+  <string name="organization_unit_title">Organization Unit (OU)</string>
+  <string name="organization_title">Organization (O)</string>
+  <string name="location_title">Location (L)</string>
+  <string name="state_title">State (ST)</string>
+  <string name="country_title">Country (C)</string>
+  
+  <!-- Device Settings -->
+  <string name="device_settings">Device Settings</string>
+  <string name="mac_address_title">Device MAC address</string>
+  <string name="mac_address_help">Open settings of your Android mobile device. Select “System“ and tap the button “About phone“. You can find the MAC address of your mobile device under “Wi-Fi MAC address“</string>
+  <string name="device_type_dialog_title">Device Type?</string>
+  <string name="device_type_help">Device types conform the WareHouseDefinitions document (WH-DEF-0195 WMA-3695)</string>
+  <string name="device_type_title">Device Type</string>
+  
+  <!-- Certificate Settings -->
+  <string name="certificate_settings">Certificate Settings</string>
+  
+  <string name="allow_certificate_creation_title">Allow Certificate Creation</string>
+  <string name="allow_certificate_creation_help">Will be set to Off when it has been created</string>
+  
+  <string name="certificate_validity_period_dialog_title">Certificate Validity Period?</string>
+  <string name="certificate_validity_period_title">Certificate Validity Period</string>
+  <string name="certificate_validity_period_help">Enter the number of days</string>
+  
+  <string name="rsa_key_size_dialog_title">RSA Key Size?</string>
+  <string name="rsa_key_size_title">RSA Key Size</string>
+  <string name="rsa_key_size_help">Enter the RSA key size</string>
+
+  <string name="user_authentication_required_title">User authentication required?</string>
+  <string name="user_authentication_required_help">Must user be authenticated for key operations?</string>
+  
+  <string name="create_certificate_title">Create Certificate</string>
+  <string name="create_certificate_help">Create Certificate in another screen</string>
+
 </resources>

@@ -1,5 +1,21 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
+  <Preference
+      app:title="Organization Settings"
+      app:fragment="com.hfad.catchat.OrganizationSettingsFragment"
+      />
+
+  <Preference
+      app:title="Device Settings"
+      app:fragment="com.hfad.catchat.DeviceSettingsFragment"
+      />
+
+  <Preference
+      app:title="Certificate Settings"
+      app:fragment="com.hfad.catchat.CertificateSettingsFragment"
+      />
+  
+  <!--
     <PreferenceCategory app:title="@string/messages_header">
 
         <EditTextPreference
@@ -31,5 +47,6 @@
             app:title="@string/attachment_title" />
 
     </PreferenceCategory>
+    -->
 
 </PreferenceScreen>

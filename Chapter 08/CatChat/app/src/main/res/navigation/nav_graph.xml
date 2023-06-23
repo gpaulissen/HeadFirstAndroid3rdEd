@@ -26,4 +26,9 @@
         android:name="com.hfad.catchat.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/organizationSettingsFragment"
+        android:name="com.hfad.catchat.OrganizationSettingsFragment"
+        android:label="Organization Settings"
+        tools:layout="@layout/fragment_organization_settings" />
 </navigation>

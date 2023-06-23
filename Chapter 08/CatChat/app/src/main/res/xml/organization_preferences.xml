@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <!-- GJP 2023-06-01 This is a dummy category and will not be shown: don't know why (yet) -->
+  <PreferenceCategory app:title="@string/organization_settings">
+
+    <EditTextPreference
+        app:key="organization_unit"
+        app:defaultValue="Project Integration"
+        app:title="@string/organization_unit_title"
+        app:useSimpleSummaryProvider="true" />
+    
+    <EditTextPreference
+        app:key="organization"
+        app:defaultValue="Vanderlande Industries"
+        app:title="@string/organization_title"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:key="location"
+        app:defaultValue="Maple"
+        app:title="@string/location_title"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:key="state"
+        app:defaultValue="Ontario"
+        app:title="@string/state_title"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:key="country"
+        app:defaultValue="CA"
+        app:title="@string/country_title"
+        app:useSimpleSummaryProvider="true" />
+
+  </PreferenceCategory>
+    
+</PreferenceScreen>
