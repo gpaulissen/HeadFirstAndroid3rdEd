@@ -6,6 +6,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/kitten_small" />
+        android:scaleType="fitCenter"
+        android:src="@drawable/vi_logo" />
 </FrameLayout>
