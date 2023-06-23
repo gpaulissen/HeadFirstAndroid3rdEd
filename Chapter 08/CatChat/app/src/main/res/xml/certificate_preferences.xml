@@ -2,52 +2,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
-  <!-- GJP 2023-06-01 This is a dummy category and will not be shown: don't know why (yet) -->
-  <PreferenceCategory app:title="@string/certificate_settings">
-
-    <SwitchPreference
-        app:key="allow_certificate_creation"
-        app:title="@string/allow_certificate_creation_title"
-        app:summary="@string/allow_certificate_creation_help"
-        app:defaultValue="true"/>
-    
-    <ListPreference
-        app:dependency="allow_certificate_creation"
-        app:key="certificate_validity_period"       
-        app:title="@string/certificate_validity_period_title"
-        app:dialogTitle="@string/certificate_validity_period_dialog_title"
-        app:entries="@array/certificate_validity_period_entries"
-        app:entryValues="@array/certificate_validity_period_values"
-        app:summary="@string/certificate_validity_period_help"
-        app:useSimpleSummaryProvider="true" />
-
-    <ListPreference
-        app:dependency="allow_certificate_creation"
-        app:key="rsa_key_size"        
-        app:defaultValue="2048"
-        app:title="@string/rsa_key_size_title"
-        app:dialogTitle="@string/rsa_key_size_dialog_title"
-        app:entries="@array/rsa_key_size_entries"
-        app:entryValues="@array/rsa_key_size_values"
-        app:summary="@string/rsa_key_size_help"
-        app:useSimpleSummaryProvider="true" />
-
-    <CheckBoxPreference
-        app:dependency="allow_certificate_creation"
-        app:key="user_authentication_required"
-        app:title="@string/user_authentication_required_title"
-        app:summary="@string/user_authentication_required_help"
-        app:useSimpleSummaryProvider="true" />
-
-    <Preference
-        app:dependency="allow_certificate_creation"
-        app:key="create_certificate"
-        app:title="@string/create_certificate_title"
-        app:summary="@string/create_certificate_help">
-      <intent
-          android:action=".CreateCertificateActivity" />
-    </Preference>
-
-  </PreferenceCategory>
+  <SwitchPreference
+      app:key="allow_certificate_creation"
+      app:title="@string/allow_certificate_creation_title"
+      app:summary="@string/allow_certificate_creation_help"
+      app:defaultValue="true"/>
   
+  <ListPreference
+      app:dependency="allow_certificate_creation"
+      app:key="certificate_validity_period"       
+      app:title="@string/certificate_validity_period_title"
+      app:dialogTitle="@string/certificate_validity_period_dialog_title"
+      app:entries="@array/certificate_validity_period_entries"
+      app:entryValues="@array/certificate_validity_period_values"
+      app:summary="@string/certificate_validity_period_help"
+      app:useSimpleSummaryProvider="true" />
+
+  <ListPreference
+      app:dependency="allow_certificate_creation"
+      app:key="rsa_key_size"        
+      app:defaultValue="2048"
+      app:title="@string/rsa_key_size_title"
+      app:dialogTitle="@string/rsa_key_size_dialog_title"
+      app:entries="@array/rsa_key_size_entries"
+      app:entryValues="@array/rsa_key_size_values"
+      app:summary="@string/rsa_key_size_help"
+      app:useSimpleSummaryProvider="true" />
+
+  <CheckBoxPreference
+      app:dependency="allow_certificate_creation"
+      app:key="user_authentication_required"
+      app:title="@string/user_authentication_required_title"
+      app:summary="@string/user_authentication_required_help"
+      app:useSimpleSummaryProvider="true" />
+
 </PreferenceScreen>

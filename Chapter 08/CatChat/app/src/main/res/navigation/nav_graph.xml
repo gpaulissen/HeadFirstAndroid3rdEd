@@ -21,14 +21,24 @@
         android:name="com.hfad.catchat.SentItemsFragment"
         android:label="Sent Items"
         tools:layout="@layout/fragment_sent_items" />
-    <fragment
+    <!--fragment
         android:id="@+id/settingsFragment"
         android:name="com.hfad.catchat.SettingsFragment"
         android:label="Settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" /-->
     <fragment
         android:id="@+id/organizationSettingsFragment"
         android:name="com.hfad.catchat.OrganizationSettingsFragment"
         android:label="Organization Settings"
         tools:layout="@layout/fragment_organization_settings" />
+    <fragment
+        android:id="@+id/deviceSettingsFragment"
+        android:name="com.hfad.catchat.DeviceSettingsFragment"
+        android:label="Device Settings"
+        tools:layout="@layout/fragment_device_settings" />
+    <fragment
+        android:id="@+id/certificateSettingsFragment"
+        android:name="com.hfad.catchat.CertificateSettingsFragment"
+        android:label="Certificate Settings"
+        tools:layout="@layout/fragment_certificate_settings" />
 </navigation>

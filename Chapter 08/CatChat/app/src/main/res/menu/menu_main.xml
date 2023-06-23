@@ -26,9 +26,17 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/settingsFragment"
+                    android:id="@+id/organizationSettingsFragment"
                     android:icon="@android:drawable/ic_menu_preferences"
-                    android:title="Settings" />
+                    android:title="@string/organization_settings" />
+                <item
+                    android:id="@+id/deviceSettingsFragment"
+                    android:icon="@android:drawable/ic_menu_preferences"
+                    android:title="@string/device_settings" />
+                <item
+                    android:id="@+id/certificateSettingsFragment"
+                    android:icon="@android:drawable/ic_menu_preferences"
+                    android:title="@string/certificate_settings" />
             </group>
         </menu>
     </item>

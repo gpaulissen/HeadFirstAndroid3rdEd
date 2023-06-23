@@ -1,52 +1,18 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-  <Preference
-      app:title="Organization Settings"
+  <!--Preference
+      app:title="@string/organization_settings"
       app:fragment="com.hfad.catchat.OrganizationSettingsFragment"
-      />
+      /-->
 
   <Preference
-      app:title="Device Settings"
+      app:title="@string/device_settings"
       app:fragment="com.hfad.catchat.DeviceSettingsFragment"
       />
 
   <Preference
-      app:title="Certificate Settings"
+      app:title="@string/certificate_settings"
       app:fragment="com.hfad.catchat.CertificateSettingsFragment"
       />
-  
-  <!--
-    <PreferenceCategory app:title="@string/messages_header">
-
-        <EditTextPreference
-            app:key="signature"
-            app:title="@string/signature_title"
-            app:useSimpleSummaryProvider="true" />
-
-        <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply"
-            app:title="@string/reply_title"
-            app:useSimpleSummaryProvider="true" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory app:title="@string/sync_header">
-
-        <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
-
-        <SwitchPreferenceCompat
-            app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
-
-    </PreferenceCategory>
-    -->
 
 </PreferenceScreen>

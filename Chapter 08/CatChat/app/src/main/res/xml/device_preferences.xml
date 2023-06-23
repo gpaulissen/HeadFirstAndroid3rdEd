@@ -1,23 +1,18 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-  <!-- GJP 2023-06-01 This is a dummy category and will not be shown: don't know why (yet) -->
-  <PreferenceCategory app:title="@string/device_settings">
+  <EditTextPreference
+      app:key="mac_address"
+      app:title="@string/mac_address_title"
+      app:summary="@string/mac_address_help"
+      app:useSimpleSummaryProvider="true" />
 
-    <EditTextPreference
-        app:key="mac_address"
-        app:title="@string/mac_address_title"
-        app:summary="@string/mac_address_help"
-        app:useSimpleSummaryProvider="true" />
-
-    <ListPreference
-        app:key="device_type"
-        app:title="@string/device_type_title"
-        app:dialogTitle="@string/device_type_dialog_title"
-        app:entries="@array/device_type_entries"
-        app:entryValues="@array/device_type_entry_values"
-        app:summary="@string/device_type_help"
-        app:useSimpleSummaryProvider="true" />
-
-  </PreferenceCategory>
+  <ListPreference
+      app:key="device_type"
+      app:title="@string/device_type_title"
+      app:dialogTitle="@string/device_type_dialog_title"
+      app:entries="@array/device_type_entries"
+      app:entryValues="@array/device_type_entry_values"
+      app:summary="@string/device_type_help"
+      app:useSimpleSummaryProvider="true" />
   
 </PreferenceScreen>
