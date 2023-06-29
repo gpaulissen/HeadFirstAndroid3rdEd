@@ -41,6 +41,7 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
     implementation 'androidx.preference:preference:1.2.0'
+    implementation "androidx.constraintlayout:constraintlayout:$androidx_constraintlayout_version"
     implementation "org.bouncycastle:bcpkix-jdk15to18:$bouncycastle_version"
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

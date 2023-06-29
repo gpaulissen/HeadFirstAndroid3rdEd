@@ -40,8 +40,10 @@
   <string name="create_certificate_title">Create Certificate</string>
   <string name="create_certificate_help">Create Certificate in another screen</string>
 
-  <!-- Create Certificate -->
+  <!-- Certificate Status -->
   <string name="certificate_status">Certificate Status</string>
+  <string name="valid_from">Valid From</string>
+  <string name="valid_till">Valid Till</string>
   <string name="create_certificate">Create Certificate</string>
   <string name="create_key">(Re-)create Key</string>
 

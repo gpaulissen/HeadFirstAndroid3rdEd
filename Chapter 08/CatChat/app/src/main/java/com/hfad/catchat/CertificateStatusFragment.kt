@@ -84,8 +84,6 @@ class CertificateStatusFragment : Fragment() {
 
         X500Principal_subject = "CN=${X500Principal_CN},OU=${X500Principal_OU},O=${X500Principal_O},L=${X500Principal_L},ST=${X500Principal_ST},C=${X500Principal_C}"
 
-        Log.i(TAG, "X500Principal_subject:" + X500Principal_subject)
-        
         //Check if lock screen has been set up. Just displaying a Toast here but it shouldn't allow the user to go forward.
         if (!keyguardManager.isDeviceSecure) {
             Toast.makeText(context, "Secure lock screen hasn't set up.", Toast.LENGTH_LONG).show()
@@ -147,7 +145,6 @@ class CertificateStatusFragment : Fragment() {
 
         //Generates the key pair
         keyPairGenerator.generateKeyPair()
-        // log.info(TAG, "key generated via generateKey2()")
     }
 
     private fun checkKeyExists(): Boolean {
@@ -162,9 +159,7 @@ class CertificateStatusFragment : Fragment() {
 
         val result: Boolean = (privateKey != null && publicKey != null)
 
-        Log.i(TAG,"checkKeyExists: $result")
-        
-        return privateKey != null && publicKey != null
+        return result
     }
      
     private fun deleteKey() {
@@ -175,7 +170,6 @@ class CertificateStatusFragment : Fragment() {
 
         //We get the private and public key from the keystore if they exists
         keyStore.deleteEntry(KEY_ALIAS)
-        // log.info(TAG, "key deleted")
     }
 
     private fun sendData() {
@@ -198,7 +192,6 @@ class CertificateStatusFragment : Fragment() {
             intent.putExtra(Intent.EXTRA_TEXT, csr)
             startActivity(intent)
         }
-        // log.info(TAG, "key sent")
     }
 
     private fun getCSR(): String {
@@ -210,34 +203,22 @@ class CertificateStatusFragment : Fragment() {
         val privateKey = (entry as KeyStore.PrivateKeyEntry).privateKey
         val publicKey = keyStore.getCertificate(KEY_ALIAS).publicKey
         for (i in 1..2) {
-            Log.v(TAG, "getCSR() for i $i")
             try {
-                Log.v(TAG, "getCSR()#1")
                 val p10Builder: PKCS10CertificationRequestBuilder = JcaPKCS10CertificationRequestBuilder(
                     X500Principal(X500Principal_subject), publicKey
                 )
-                Log.v(TAG, "getCSR()#2")
                 val csBuilder = JcaContentSignerBuilder("SHA256WithRSAEncryption")
-                Log.v(TAG, "getCSR()#3")
                 val signer: ContentSigner = csBuilder.build(privateKey)
-                Log.v(TAG, "getCSR()#4")
                 val csr: PKCS10CertificationRequest = p10Builder.build(signer)
-                Log.v(TAG, "getCSR()#5")
                 val csrAsString: StringWriter = StringWriter()
-                Log.v(TAG, "getCSR()#6")
                 val pemObject = PemObject("CERTIFICATE REQUEST", csr.encoded)
-                Log.v(TAG, "getCSR()#7")
                 val pemWriter = JcaPEMWriter(csrAsString)
-                Log.v(TAG, "getCSR()#8")
                 pemWriter.writeObject(pemObject)
-                Log.v(TAG, "getCSR()#9")
                 pemWriter.close()
                 csrAsString.close()
-                Log.v(TAG, "CSR: $csrAsString")
 
                 return csrAsString.toString()
             } catch (e: Exception) {
-                Log.v(TAG, "exception for case $i: " + e::class.java.simpleName)
                 if (i == 1) {
                     showAuthenticationScreen()
                 } else {
