@@ -1,6 +1,6 @@
 <resources>
   
-  <string name="app_name">WiFi Certificate</string>
+  <string name="app_name">WiFi Certificate Mgr</string>
   <!-- TODO: Remove or change this placeholder text -->
   <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -39,5 +39,10 @@
   
   <string name="create_certificate_title">Create Certificate</string>
   <string name="create_certificate_help">Create Certificate in another screen</string>
+
+  <!-- Create Certificate -->
+  <string name="certificate_status">Certificate Status</string>
+  <string name="create_certificate">Create Certificate</string>
+  <string name="create_key">(Re-)create Key</string>
 
 </resources>

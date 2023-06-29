@@ -4,9 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/inboxFragment">
+    app:startDestination="@id/certificateStatusFragment">
 
     <fragment
+        android:id="@+id/certificateStatusFragment"
+        android:name="com.hfad.catchat.CertificateStatusFragment"
+        android:label="@string/certificate_status"
+        tools:layout="@layout/fragment_certificate_status" />
+    <!--fragment
         android:id="@+id/inboxFragment"
         android:name="com.hfad.catchat.InboxFragment"
         android:label="Inbox"
@@ -20,7 +25,7 @@
         android:id="@+id/sentItemsFragment"
         android:name="com.hfad.catchat.SentItemsFragment"
         android:label="Sent Items"
-        tools:layout="@layout/fragment_sent_items" />
+        tools:layout="@layout/fragment_sent_items" /-->
     <fragment
         android:id="@+id/organizationSettingsFragment"
         android:name="com.hfad.catchat.OrganizationSettingsFragment"

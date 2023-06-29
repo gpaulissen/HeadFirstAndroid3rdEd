@@ -9,6 +9,7 @@
   <color name="orange">#FFA50000</color>
   <color name="black">#FF000000</color>
   <color name="white">#FFFFFFFF</color>
+  <color name="orange_vi">#EF7B10</color>
 
   <color name="colorPrimary">#FF6200EE</color>
   <color name="colorPrimaryVariant">#FF3700B3</color>

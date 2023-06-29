@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
-        <item
+        <!--item
             android:id="@+id/inboxFragment"
             android:icon="@android:drawable/ic_dialog_email"
-            android:title="Inbox" />
-        <item
+            android:title="Inbox" /-->
+        <!--item
             android:id="@+id/sentItemsFragment"
             android:icon="@android:drawable/ic_menu_send"
-            android:title="Sent Items" />
+            android:title="Sent Items" /-->
+        <item
+            android:id="@+id/certificateStatusFragment"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="@string/certificate_status" />
     </group>
 
-    <item android:title="Support">
+    <!--item android:title="Support">
         <menu>
             <group android:checkableBehavior="single">
                 <item
@@ -20,7 +24,7 @@
                     android:title="Help" />
             </group>
         </menu>
-    </item>
+    </item-->
 
     <item android:title="Settings">
         <menu>

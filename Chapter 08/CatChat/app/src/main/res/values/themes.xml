@@ -15,7 +15,8 @@
     <!--
     <item name="android:windowBackground">@color/white</item>
     <item name="android:colorBackground">@color/orange</item>
-    -->
     <item name="android:background">@color/white</item>
+    -->
+    <item name="android:background">@color/orange_vi</item>
   </style>
 </resources>
